@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build - ethancollins/multi-test -f ./client/Dockerfile.dev ./client
+  - docker build ethancollins/multi-test -f ./client/Dockerfile.dev ./client
 
 # If anything in the script section exits with a
 # non-zero status code, the travis build will fail
