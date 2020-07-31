@@ -9,7 +9,7 @@ before_install:
 # If anything in the script section exits with a
 # non-zero status code, the travis build will fail
 script:
-  - docker run -e CI=true USERNAME/react-test npm test
+  - docker run -e CI=true ethancollins/multi-test npm test
 
 # Build images after successful tests
 after_success:
